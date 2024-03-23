@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-semantic and semantic HTML</title>
+    <!-- link normalize css -->
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400&family=Karla:ital,wght@1,200;1,300;1,400&family=Lora:wght@400;500&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- internal Stylesheet -->
+ <style>
+       body {background-image: linear-gradient(to right bottom, #f8c19e, #f8b697, #f8bca6, #f6c2b4, #f2c8c1);
+       width: 100%;
+       height: 340vh;
+       display: flex;
+       flex-direction: column;
+      }
+
+    /* Header */
+
+      header {
+       width: 95%;
+       }
+
+      header img {
+       display: inline-block;
+       width: 80px;
+       margin:  10px;
+       padding-bottom: 20px;
+       }
+
+
+      nav {
+       float: right;
+      margin: 40px,20px; 
+       
+       }
+
+      nav ul {
+       list-style: none;
+       text-align: center;  
+       display: flex;
+         
+       }
+
+      nav ul li {
+  
+       margin:  25px 10px;
+       width:  100px;   
+       }
+
+      nav ul li a {
+       text-decoration: none;
+       font-family: var(--sansseriffont);
+       font-size: var(--navfontsize);
+       font-weight: 300;
+       color: var(--black);
+      }
+
+
+      #hero {
+       width: 100%;
+       flex-direction: column;
+       justify-content: center;
+       align-items:flex-start;
+       display: flex;
+      }
+
+      main {
+       width: 100%;
+       color: var(--grey);
+       padding-bottom: 40px;
+       }
+
+     h1 {
+    
+       font-family: var(--seriffont);
+       color: var(--grey);
+       font-weight: 400;
+       font-size: var(--h1fontsize);
+       padding: 20px 20px 0 20px;
+      text-align: center;
+      }
+
+      p {
+        font-family: var(--sansseriffont);
+       color: var(--grey);
+       font-weight: 90;
+       font-size: var(--pfontsize);
+       padding-left: 680px;
+       padding-bottom: 110px;
+      }
+
+ 
+
+
+    /* Main */
+
+
+ 
+      .works-section {
+       width: 100%;
+      }
+
+      .Works {
+        width: 95%;
+       margin: 10px;
+       padding: 10px;
+      }
+
+      .Works figure {
+       display: inline-block;
+       width: 40%;
+       margin: 10px;
+       padding: 20px;
+       padding-bottom: 100px;
+      }
+
+      .Works img {
+       width: 100%;
+       border-radius: 10%;
+      }
+
+      .Works figcaption {
+       display: inline-block;
+       width: 50%;
+       padding: 20px;
+       vertical-align: top;
+  
+      }
+
+      .Works figcaption h3 {
+        font-family: var(--seriffont);
+       color: #413e3e;
+       font-weight: 400;
+       font-size: var(--h3fontsize);
+       padding-bottom: 60px;
+       
+      }
+
+
+      .Works figcaption p {
+        font-family: var(--sansseriffont);
+       color:#413e3e ;
+       font-weight: 80;
+       font-size: var(--figcaptionpfontsize);
+       padding: 20px;
+       padding-bottom: 20px;
+      }
+     
+    .Works figcaption a {
+       font-family:'Playfair Display',serif ;
+       color: #413e3e;
+       font-weight: 450;
+       font-size: var(--figcaptionafontsize);
+       padding: 10px;
+       text-decoration: none;
+      }
+
+   
+
+
+
+     /* Footer */
+
+      footer {
+       color: #625656;
+       font-family:'Alegreya Sans', sans-serif;
+       font-size: 0.25em;
+       width: 100%;
+       height: 1em;
+       text-align: center;
+       padding-top: 145px;
+      }
+
+      footer p {
+       display: inline-block;
+       padding: 20px;
+      }
+
+      footer a {
+        list-style: none;
+       text-align: center; 
+       text-decoration: none;
+       padding: 15px;
+       color: #625656;
+       font-family:'Alegreya Sans', sans-serif;
+       font-size: 0.25em;
+        
+      }
+
+      /* Set Variables */
+      :root {
+        --black :#121212;
+        --grey :#413e3e;
+        --seriffont: 'Playfair Display',serif ;
+        --sansseriffont:'Alegreya Sans', sans-serif;
+        --h1fontsize:7em;
+        --pfontsize:4.6em;
+        --navfontsize:1.25rem;
+        --h3fontsize:3em;
+        --figcaptionpfontsize:1.6em;
+        --figcaptionafontsize:0.8em;
+        
+      }
+
+
+       /* interaction */
+
+       .btn {
+            background: #F0F0F0;
+            opacity: 90%;
+            color: #121212;
+            border-radius: 50%;
+            text-align: center;
+            padding: 30px;
+            width: 90px;
+            line-height: 80px;
+            height: 80px;
+            user-select: none;
+          }
+
+          /* Pseudo classes  */
+         
+          ul li:nth-child(1):hover {
+          text-decoration: underline;
+          color: #F0F0F0;
+       }
+        
+        ul li:nth-child(1) a:hover {
+          color: #F0F0F0;
+        }
+
+        ul li:nth-child(2):hover {
+          text-decoration: underline;
+          color: #F0F0F0;
+       }
+        
+        ul li:nth-child(2) a:hover {
+          color: #F0F0F0;
+        }
+
+        ul li:nth-child(3):hover {
+          text-decoration: underline;
+          color: #F0F0F0;
+       }
+        
+        ul li:nth-child(3) a:hover {
+          color: #F0F0F0;
+        }
+
+         .btn:hover {
+          background: #f0e7e6;
+         }
+          
+
+         .btn:active {
+          background:#e1d7d5 ;
+         }
+
+
+         figcaption p::before {
+          content:"Project Info : ";
+          font-weight: 300;
+          color: #625656;
+          }
+
+          figcaption h3::after {
+          content:"  Web Design - UI / UX ";
+          font-size: 0.8em;
+          color: #625656;
+          }
+          
+          /* Transition */
+         
+          .Works img:hover {
+            width: 660px;
+            transition: 1s cubic-bezier(.50,.80,.30,-0.63);
+          }
+          
+          .btn:hover {
+            width: 80px;
+          transition: 1s;
+         }
+           
+         .Works figcaption a:hover {
+          font-size:  0.7em;
+
+         }
+
+      /* Media Rules */
+
+       @media (max-width: 768px) {
+        
+       }
+         :root {
+          --h1fontsize: 6.0em;
+          --pfontsize:4.0em;
+          --h3fontsize:1.8em;
+          --figcaptionpfontsize:1.2em;
+          --navfontsize:1.3rem
+          
+         }
+        
+       
+
+         .Works img {
+         width: 95%;
+         }
+
+         .Works figure {
+           display: inline-block;
+           width: 50%;
+
+          }
+
+         .Works figcaption {
+           display: inline-block;
+           width: 35%;
+           padding: 20px;
+           vertical-align: top;
+          }
+           
+
+         @media (max-width: 600px) {
+         :root {
+           --h1fontsize: 2.5em;
+           --pfontsize:2.0em;
+           --h3fontsize:1.6em;
+           --figcaptionpfontsize:1.2em;
+           --navfontsize:1.0rem;
+           --figcaptionafontsize:1.0em;
+      
+          
+          }
+         
+
+         nav {
+           width: 100%;
+          }
+
+         nav ul {
+           flex-direction: column;
+           align-items: center;
+          }
+      
+        }
+         
+       
+
+  </style>
+</head>
+
+<body>
+<!-- Header -->
+<header>
+<img src="AD Logo2.png" alt="Aurelie's Logo">
+<nav>
+<ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    
+</ul>
+</nav>
+</header>
+
+<!-- Content Starting -->
+<main>
+       <section id="Hero">
+       <h1>Aurelie Durand</h1>
+       <p>Web Designer</p>
+      </section>
+
+     <div class="Works section">
+        <section class="Works" id="project1">
+          <figure>
+             <img src="Mockup home page destock.jpg" alt="Case study" width="500 pixels">
+          </figure>
+
+             <figcaption>
+             <h3>Selected Work :</h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore at earum aliquid pariatur incidunt possimus sint perspiciatis explicabo fuga nihil. Lorem ipsum dolor sit amet.</p>
+             <div class="btn"><a href="#">Learn More</a></div>
+           </figcaption>
+       </section>
+
+       <section class="Works" id="project2">
+             <figure>
+             <img src="Instagram story.jpg" alt="Instagram Post" width="500 pixels">
+          </figure>
+
+             <figcaption>
+             <h3>Wildlife Friend Foundation : </h3>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore at earum aliquid pariatur incidunt possimus sint perspiciatis explicabo fuga nihil. Lorem ipsum dolor sit amet.</p>
+             <div class="btn"><a href="#">Learn More</a></div>
+           </figcaption>
+       </section>
+    </div>
+
+</main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&COPY; 2024 Aurelie's design. All rights reserved</p>
+
+      <a href="#">Instagram</a>
+      <a href="#">Behance</a>
+      <a href="#">Dribble</a>
+    </footer>
+
+</body>
+</html>
+
+
+
